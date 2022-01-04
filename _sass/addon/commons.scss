@@ -630,7 +630,9 @@ $sidebar-display: "sidebar-display";
   width: $sidebar-width;
   z-index: 99;
   background: var(--sidebar-bg);
-
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: var(--sidebar-border);
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
@@ -676,10 +678,10 @@ $sidebar-display: "sidebar-display";
       transition: transform 0.5s;
 
       &:hover {
-        -ms-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        -ms-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03);
       }
     }
   } // #avatar
@@ -750,7 +752,7 @@ $sidebar-display: "sidebar-display";
           visibility: hidden;
           content: "";
           position: relative;
-          right: 1px;
+          right: 0px;
           width: $cursor-width;
           height: $tab-cursor-height;
           border-radius: 1px;
