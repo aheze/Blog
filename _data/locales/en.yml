@@ -23,8 +23,8 @@ search:
   no_results: Oops! No result founds.
 
 panel:
-  lastmod: Recent Update
-  trending_tags: Trending Tags
+  lastmod: Recently Updated
+  trending_tags: Related Tags
   toc: Contents
 
 #  The liquid date format › http://strftime.net/
