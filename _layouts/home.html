@@ -15,11 +15,11 @@ layout: page
 {% assign pinned_num = pinned.size | minus: offset %}
 
 {% if pinned_num > 0 %}
-  {% for i in (offset..pinned.size) limit: pinned_num %}
-    {% assign posts = posts | push: pinned[i] %}
-  {% endfor %}
+{% for i in (offset..pinned.size) limit: pinned_num %}
+{% assign posts = posts | push: pinned[i] %}
+{% endfor %}
 {% else %}
-  {% assign pinned_num = 0 %}
+{% assign pinned_num = 0 %}
 {% endif %}
 
 
@@ -28,7 +28,7 @@ layout: page
 
 <div id="post-list">
 
-{% for post in pinned %}
+  {% for post in pinned %}
 
   <div class="post-preview">
     <h1>
@@ -55,13 +55,13 @@ layout: page
 
         <!-- categories -->
         {% if post.categories.size > 0 %}
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
+        <i class="far fa-folder-open fa-fw"></i>
+        <span>
           {% for category in post.categories %}
-            {{ category }}
-            {%- unless forloop.last -%},{%- endunless -%}
+          {{ category }}
+          {%- unless forloop.last -%},{%- endunless -%}
           {% endfor %}
-          </span>
+        </span>
         {% endif %}
       </div>
 
@@ -74,6 +74,17 @@ layout: page
 
   </div> <!-- .post-review -->
 
-{% endfor %}
+  {% endfor %}
 
 </div> <!-- #post-list -->
+
+
+<div>{{"
+
+# Welcome to Swift!
+
+Learn how to develop iOS apps using Swift and SwiftUI. Head over to [Tutorials](https://swift.getfind.app/tutorials/) to get started!
+
+
+
+"| markdownify}}</div>
