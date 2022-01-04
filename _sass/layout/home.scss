@@ -60,7 +60,10 @@
   .post-preview {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--main-border-color);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 1px solid var(--main-border-color);
+    border-radius: 12px;
 
     a:hover {
       @extend %link-hover;
@@ -103,7 +106,6 @@
 
     .pin {
       > i {
-        transform: rotate(45deg);
         padding-left: 3px;
         color: var(--pin-color);
       }

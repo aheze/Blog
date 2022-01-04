@@ -83,7 +83,7 @@ post:
       title: Copy link
       succeed: Link copied successfully!
   # pinned prompt of posts list on homepage
-  pin_prompt: Pinned
+  pin_prompt: Announcement
 
 # categories page
 categories:

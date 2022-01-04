@@ -2,7 +2,6 @@
 layout: page
 # The Home page layout
 ---
-
 {% include lang.html %}
 
 {% assign pinned = site.posts | where: "pin", "true" %}
@@ -26,24 +25,10 @@ layout: page
 
 <!-- Get default posts -->
 
-{% assign default_beg = offset | minus: pinned.size %}
-
-{% if default_beg < 0 %}
-  {% assign default_beg = 0 %}
-{% endif %}
-
-{% assign default_num = paginator.posts | size | minus: pinned_num  %}
-{% assign default_end = default_beg | plus: default_num | minus: 1 %}
-
-{% if default_num > 0 %}
-  {% for i in (default_beg..default_end) %}
-    {% assign posts = posts | push: default[i] %}
-  {% endfor %}
-{% endif %}
 
 <div id="post-list">
 
-{% for post in posts %}
+{% for post in pinned %}
 
   <div class="post-preview">
     <h1>
@@ -80,12 +65,10 @@ layout: page
         {% endif %}
       </div>
 
-      {% if post.pin %}
       <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
+        <i class="fas fa-bell"></i>
         <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
       </div>
-      {% endif %}
 
     </div> <!-- .post-meta -->
 
@@ -94,7 +77,3 @@ layout: page
 {% endfor %}
 
 </div> <!-- #post-list -->
-
-{% if paginator.total_pages > 0 %}
-  {% include post-paginator.html %}
-{% endif %}
