@@ -1,10 +1,10 @@
 ---
-title: SwiftUI
+title: Basics
 author:
   name: Andrew Zheng
   link: https://github.com/aheze
-date: 2022-01-03 20:18 -0800
-categories: [Getting Started]
+date: 2022-01-04
+categories: [SwiftUI]
 tags: [Swift, SwiftUI, iOS]
 ---
 
@@ -31,7 +31,7 @@ struct ContentView: View {
         Text("Hello, world!")
 
         /// 4.
-        .foregroundColor(Color.blue)
+        .foregroundColor(.blue)
     }
 }
 ```

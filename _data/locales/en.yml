@@ -75,13 +75,13 @@ post:
   relate_posts: Further Reading
   share: Share
   button:
-    next: Newer
-    previous: Older
+    next: Next
+    previous: Previous
     copy_code:
       succeed: Copied!
     share_link:
       title: Copy link
-      succeed: Link copied successfully!
+      succeed: Link copied!
   # pinned prompt of posts list on homepage
   pin_prompt: Announcement
 
