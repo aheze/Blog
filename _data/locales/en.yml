@@ -11,7 +11,7 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
-  posts: Posts
+  posts: All Posts
   categories: Categories
   tags: Tags
   about: About
