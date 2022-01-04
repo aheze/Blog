@@ -18,9 +18,9 @@ timezone: America/Los_Angeles
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: App Dev                          # the main title
+title: Swift                          # the main title
 
-tagline: Learn Swift and SwiftUI   # it will display as the sub-title
+tagline: App Development with SwiftUI   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Learn app development with Swift and SwiftUI.
