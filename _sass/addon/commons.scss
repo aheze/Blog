@@ -436,13 +436,13 @@ img[data-src] + em {
   word-wrap: break-word;
 
   a {
-    &:not(.img-link) {
-      @extend %link-underline;
+    // &:not(.img-link) {
+    //   @extend %link-underline;
 
-      &:hover {
-        @extend %link-hover;
-      }
-    }
+    //   &:hover {
+    //     @extend %link-hover;
+    //   }
+    // }
 
     &.img-link + em {
       display: block;

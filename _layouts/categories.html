@@ -16,6 +16,7 @@ title: tutorials
 {% for category in sort_categories %}
 {% assign category_name = category | first %}
 {% assign posts_of_category = category | last %}
+{% assign sort_posts_of_category = posts_of_category | sort %}
 {% assign first_post = posts_of_category | first %}
 
 {% if category_name == first_post.categories[0] %}
@@ -30,7 +31,7 @@ title: tutorials
       <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
 
       {% capture _category_url %}/tutorials/{{ category_name | slugify | url_encode }}/{% endcapture %}
-      <a href="{{ _category_url | relative_url }}" class="ml-1 mr-2">{{ category_name }}</a>
+      <span class="ml-1 mr-2">{{ category_name }}</span>
 
       <!-- content count -->
       {% assign top_posts_size = site.categories[category_name] | size %}
@@ -43,18 +44,25 @@ title: tutorials
         {{ site.data.locales[lang].categories.post_measure }}
       </span>
     </span>
+
+    <a href="#{{ LIST_PREFIX }}{{ group_index }}" data-toggle="collapse" aria-expanded="true"
+      aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger" class="category-trigger hide-border-bottom">
+      <i class="fas fa-fw fa-angle-down"></i>
+    </a>
   </div> <!-- .card-header -->
 
-  <div class="collapse show">
+  <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show">
     <ul class="list-group">
-    {% for post in posts_of_category %}
-    <li class="category-post-card d-flex justify-content-between pl-md-3 pr-md-3">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <span class="dash flex-grow-1"></span>
-      <span class="text-muted small">{{ post.date | date: post_df }}</span>
-    </li>
-    {% endfor %}
-  </ul>
+      {% for post in sort_posts_of_category %}
+      {% assign post_df = site.data.locales[lang].date_format.post.long %}
+      
+      <li class="category-post-card d-flex justify-content-between pl-md-3 pr-md-3">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="dash flex-grow-1"></span>
+        <span class="date-muted">{{ post.date | date: post_df }}</span>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </div> <!-- .card -->
 
