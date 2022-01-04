@@ -13,7 +13,7 @@ tabs:
   home: Beranda
   categories: Kategori
   tags: Tagar
-  archives: Arsip
+  posts: Arsip
   about: Tentang
 
 # the text displayed in the search bar & search results
@@ -52,9 +52,9 @@ meta: Didukung oleh :PLATFORM dengan tema :THEME.
 
 not_found:
   statment: Maaf, kami gagal menemukan URL itu atau memang mengarah ke sesuatu yang tidak ada.
-  hint_template: :HEAD_BAK untuk mencoba mencari kembali, atau cari di :ARCHIVES_PAGE.
+  hint_template: :HEAD_BAK untuk mencoba mencari kembali, atau cari di :posts_PAGE.
   head_back: Kembali ke Beranda
-  archives_page: Halaman Arsip
+  posts_page: Halaman Arsip
 
 # ----- Posts related labels -----
 

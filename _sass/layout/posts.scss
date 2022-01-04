@@ -1,5 +1,5 @@
 /*
-  Style for Archives
+  Style for posts
 */
 
 %date-timeline {
@@ -12,7 +12,7 @@
   background-color: var(--timeline-color);
 }
 
-#archives {
+#posts {
   letter-spacing: 0.03rem;
 
   span.lead {
@@ -47,7 +47,7 @@
       }
     }
 
-  } // #archives span.lead
+  } // #posts span.lead
 
   ul {
     li {
@@ -94,7 +94,7 @@
     &:last-child > li:last-child::after {
       display: none;
     }
-  } // #archives ul
+  } // #posts ul
 
   .date {
     white-space: nowrap;
@@ -132,12 +132,12 @@
       position: relative;
       left: -0.15rem;
     }
-  } // #archives .date
+  } // #posts .date
 
-} // #archives
+} // #posts
 
 @media all and (max-width: 576px) {
-  #archives {
+  #posts {
     margin-top: -1rem;
 
     ul {

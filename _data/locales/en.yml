@@ -11,9 +11,9 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
+  posts: Posts
   categories: Categories
   tags: Tags
-  archives: Archives
   about: About
 
 # the text displayed in the search bar & search results
@@ -52,9 +52,9 @@ meta: Powered by :PLATFORM with :THEME theme.
 
 not_found:
   statment: Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
-  hint_template: :HEAD_BAK to try finding it again, or search for it on the :ARCHIVES_PAGE.
+  hint_template: :HEAD_BAK to try finding it again, or search for it on the :posts_PAGE.
   head_back: Head back Home
-  archives_page: Archives page
+  posts_page: posts page
 
 # ----- Posts related labels -----
 
