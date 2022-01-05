@@ -4,7 +4,7 @@ author:
   name: Andrew Zheng
   link: https://github.com/aheze
 date: 2022-01-04
-categories: [SwiftUI]
+categories: [Week 12]
 tags: [Swift, SwiftUI, iOS]
 ---
 

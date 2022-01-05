@@ -1,3 +1,4 @@
 <!--  The comments switcher -->
-
+{% if page.comments and site.comments.active %}
   {% include comments/utterances.html %}
+{% endif %}

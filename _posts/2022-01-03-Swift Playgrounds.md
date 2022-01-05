@@ -8,9 +8,9 @@ categories: [Getting Started]
 tags: [Swift Playgrounds, Swift, SwiftUI, iOS]
 ---
 
-### What's Swift Playgrounds?
+### Overview
 
-Swift Playgrounds is a code editor that runs on iPad [(download)](https://apps.apple.com/us/app/swift-playgrounds/id908519492). In other words, it's an app that lets you make apps.
+Swift Playgrounds is a code editor that runs on iPad [(download)](https://apps.apple.com/us/app/swift-playgrounds/id908519492). So it's an app that lets you make apps.
 
 ![](/assets/SwiftPlaygrounds.webp){: w="100" }
 *The app*
