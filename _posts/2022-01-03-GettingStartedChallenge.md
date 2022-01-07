@@ -8,7 +8,8 @@ categories: [Getting Started]
 tags: [Swift, SwiftUI, iOS]
 ---
 
-### Overview
+### Challenge #1
+
 Make a view that looks like this:
 
 ![](/assets/SwiftUIStack.png){: .shadow }

@@ -11,9 +11,11 @@ title: tutorials
 
 {% assign group_index = 0 %}
 
+
 {% assign sort_categories = site.categories | sort %}
 
 {% for category in sort_categories %}
+
 {% assign category_name = category | first %}
 {% assign posts_of_category = category | last %}
 {% assign sort_posts_of_category = posts_of_category | sort %}
@@ -25,9 +27,12 @@ title: tutorials
 {% assign posts_of_category_size = posts_of_category | size %}
 
 <div class="card categories">
+
   <!-- top-category -->
   <div id="{{ HEAD_PREFIX }}{{ group_index }}" class="card-header d-flex justify-content-between hide-border-bottom">
     <span>
+
+
       <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
 
       {% capture _category_url %}/tutorials/{{ category_name | slugify | url_encode }}/{% endcapture %}

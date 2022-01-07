@@ -25,6 +25,8 @@ tagline: App Development with SwiftUI   # it will display as the sub-title
 description: >-                        # used by seo meta and the atom feed
   Learn app development with Swift and SwiftUI.
 
+
+
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ''
 
